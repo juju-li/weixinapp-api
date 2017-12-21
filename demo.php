@@ -60,7 +60,7 @@ class wechatCallbackapiTest{
    }
  
   }else {
-   echo "";
+   echo "$postStr is empty";
    exit;
   }
  }
