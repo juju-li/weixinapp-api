@@ -26,7 +26,9 @@ class wechatCallbackapiTest{
  public function responseMsg(){
    
  //get post data, May be due to the different environments
-  $postStr = $GLOBALS["HTTP_RAW_POST_DATA"]; //接收微信发来的XML数据
+
+  $postStr = file_get_contents('php://input');
+  // $postStr = $GLOBALS["HTTP_RAW_POST_DATA"]; //接收微信发来的XML数据
  
   //extract post data
  if(!empty($postStr)){
