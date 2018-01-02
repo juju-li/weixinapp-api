@@ -19,7 +19,7 @@ class wechatApi{
 
   public function getUserInfo($code){
     
-    $url = "https://api.weixin.qq.com/sns/jscode2session?appid=wx10e1dde2e7aea329&secret=05a0e06885b8490d8203b9cbcd8a616f&js_code=".$code."&grant_type=authorization_code";
+    $url = "https://api.weixin.qq.com/sns/jscode2session?appid=wxba107b18de1094ef&secret=6980c9a4d7ca5aa551a696be80a00857&js_code=".$code."&grant_type=authorization_code";
     $result = $this->http_get($url);
 
     $ret = array();
